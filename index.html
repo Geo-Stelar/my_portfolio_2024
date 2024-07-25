@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@1.0.4/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+</head>
+<body style="background: #102B3E;">
+
+    <!--sidebar-->
+    <div class="fixed h-screen w-full lg:w-24 lg:h-full pt-6 bg-transparent flex lg:items-center justify-center lg:justify-center lg:flex-col">
+        <div class="w-full flex flex-wrap justify-center lg:justify-center">
+            <!--Autobiografia, proyectos, experiencia, herramientas, contacto-->
+            <div class="bg-transparent">
+                <div class="py-2 px-2 lg:py-10 lg:px-2 text-gray-100 bg-gray-900 rounded-full text-center shadow-lg flex lg:flex-col w-full lg:w-auto">
+                    <span class="cursor-pointer hover:text-white block mx-5 lg:mx-2 my-4">
+                        <a href="#sobremi"><i class="fas fa-user-alt custom-icon" onclick="toggleCustomClass(this)"></i></a>
+                    </span>
+                    <span class="cursor-pointer hover:text-white block mx-5 lg:mx-2 my-4">
+                        <a href="#experiencia"><i class="fas fa-briefcase custom-icon" onclick="toggleCustomClass(this)"></i></a>
+                    </span>
+                    <span class="cursor-pointer hover:text-white block mx-5 lg:mx-2 my-4">
+                        <a href="#proyectos"><i class="fas fa-pencil-alt custom-icon" onclick="toggleCustomClass(this)"></i></a>
+                    </span>
+                    <span class="cursor-pointer hover:text-white block mx-5 lg:mx-1 my-4">
+                        <a href="#tecnologias"><i class="fas fa-code custom-icon" onclick="toggleCustomClass(this)"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+    <!-- Contenido Saludo -->
+    <div id="sobremi" class="container-center py-40 mx-4 lg:mx-24 text-white">
+        <div class="max-w text-center">
+            <h1 class="text-2xl lg:text-5xl font-bold mb-6">¡Hola! Soy Diego Estrada,</h1>
+            <h1 class="text-4xl lg:text-6xl font-bold mb-4" style="color: #3AC6EA;">Programador de Backend</h1>
+        </div>
+    </div>
+    
+    <!-- Contenido Sobre mi -->
+    <div class="container-center" style="background-color: #CED8E1;">
+        <div class="mx-4 lg:mx-24 p-5 flex flex-wrap text-center lg:text-left" style="color: #102B3E;">
+            <div class="w-full lg:w-8/12 p-5 lg:p-24">
+                <h1 class="text-3xl lg:text-5xl font-bold">Un poco sobre mí</h1>
+                <p class="lg:text-xl font-light mt-5 leading-relaxed">
+                    Me destaco por mi habilidad para resolver problemas de programación de manera efectiva y rápida,
+                    utilizando los conocimientos adquiridos y en constante aprendizaje. Mi capacidad para aprender rápidamente 
+                    me permite adaptarme a nuevas tecnologías y métodos con facilidad, lo que me convierte en un programador versátil 
+                    y competente en el campo del desarrollo de software.
+                </p>
+            </div>
+            <div class="w-full lg:w-4/12">
+                <img class="py-12 mx-auto" src="img/avatar_.png" alt="loading..." style="max-width: 20rem;"> <!-- Link de la imagen https://www.pinterest.com/pin/4996249581877808/ -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contenido Experiencia -->
+    <div id="experiencia"  class="container-center pb-20 bg-white" >
+        <div class="mx-24 p-4 flex" style="color: #2F3C54">
+            <div class="w-full text-center">
+                <p class="text-3xl lg:text-5xl font-bold py-12"> Experiencia </p>
+            </div>
+        </div>
+
+        <div class="mx-4 lg:mx-24 px-10 pb-10 flex flex-wrap">
+            <div class="w-full lg:w-6/12 p-4 overflow-hidden" style="border: #3AC6EA; background-color: #3AC6EA; color:#102B3E;" data-aos="slide-right">
+                <p class="text-2xl lg:text-4xl font-bold p-5 lg:p-10">Aplicación web educativa</p>
+                <p class="text-md font-normal px-5 pb-5 lg:px-10 lg:pb-10">
+                    Creación de una aplicación web educativa e interactiva para la empresa Colección de Monte Sinaí. 
+                    La plataforma <strong> permite resolver las actividades de los libros de la empresa de manera virtual, 
+                    facilitando el aprendizaje y la evaluación en línea; </strong> está diseñada para ser intuitiva 
+                    y accesible, con una interfaz amigable para los usuarios.
+                </p>
+                <p class="text-sm font-light p-5 lg:p-10">20/06/2022</p>
+                <div class="px-5 lg:px-10 pt-2 pb-2">
+                    <span class="inline-flex items-center bg-blue-600 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <img src="img/php_icon.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 23px;">PHP
+                    </span>
+                    <span class="inline-flex items-center bg-yellow-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                        <img src="img/JS.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">JavaScript
+                    </span>
+                    <span class="inline-flex items-center bg-purple-700 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <img src="img/bootstrap_icon.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 20px;">Bootstrap
+                    </span>
+                    <span class="inline-flex items-center bg-blue-800 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <img src="img/POSTGRES.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 20px;">PostgreSQL
+                    </span>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-6/12">
+                <img class="object-cover w-full h-full" src="img/exp1.png" alt="loading..." style="max-height: 30rem;" data-aos="slide-right">
+            </div>
+            
+            <div class="w-full lg:w-6/12">
+                <img class="object-cover w-full h-full" src="img/exp2.png" alt="loading..." style="max-height: 30rem;" data-aos="slide-right">
+            </div>
+
+            <div class="w-full lg:w-6/12 p-4"  style="border: #102B3E; background-color: #102B3E; color: #3AC6EA" data-aos="slide-right">
+                <p class="text-2xl lg:text-4xl font-bold p-5 lg:p-10">
+                    Técnico en soporte y mantenimiento
+                </p>
+                <p class="text-md font-normal px-5 lg:px-10">
+                    Las responsabilidades incluían la <strong> configuración y mantenimiento de 
+                    hardware y software</strong>, asegurando 
+                    la correcta operatividad de los equipos médicos y administrativos.                    
+                </p>
+                <p class="text-md font-normal px-5 pb-5 lg:px-10 lg:pb-10">
+                    Se proveía soporte técnico a los usuarios, resolviendo 
+                    problemas relacionados con el sistema operativo, 
+                    aplicaciones y red, así mismo facilitandoles el cumplimiento 
+                    de las responsabilidades del personal. 
+                </p>
+                <p class="text-sm font-light p-5 lg:p-10">
+                    15/01/2023
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido Proyectos -->
+    <div id="proyectos" class="container-center pb-20" style="background-color: #3AC6EA;">
+        <div class="mx-4 lg:mx-24 p-4 text-white flex" style="color: #102B3E;">
+            <div class="w-full text-center">
+                <p class="text-3xl lg:text-5xl font-bold py-12">Mis proyectos</p>
+            </div>
+        </div>
+        <div class="lg:mx-40 px-10 flex flex-wrap">
+            <div class="w-full lg:w-4/12 p-4 project-card">
+                <img class="object-cover w-full h-full" src="img/project_1.png" alt="loading...">
+                <div class="hover-info">
+                    <p class="text-md lg:text-xl font-medium px-5 pb-5 lg:px-10 lg:pb-2">
+                        Sistema de información
+                    </p>
+                    <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
+                        Desarrollo de una wiki dinámica y actualizada, donde los usuarios autorizados con permisos de edición pueden gestionar y actualizar contenido de manera colaborativa. 
+                    </p>
+                    <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
+                        <span class="inline-flex items-center bg-yellow-500 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/PYTHON.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">Python
+                        </span>
+                        <span class="inline-flex items-center bg-green-600 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/DJANGO.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">Django
+                        </span>
+                        <span class="inline-flex items-center bg-yellow-800 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/MYSQL.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">MySQL
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-4/12 p-4 project-card">
+                <img class="object-cover w-full h-full" src="img/project_2.png" alt="loading...">
+                <div class="hover-info">
+                    <p class="text-md lg:text-xl font-medium px-5 pb-5 lg:px-10 lg:pb-2">
+                        Sistema de gestión aires acondicionados
+                    </p>
+                    <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
+                        Desarrollo de un sistema integral para la gestión de la instalación y el mantenimiento de unidades de aire acondicionado. 
+                        
+                    </p>
+                    <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
+                        <span class="inline-flex items-center bg-purple-800 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/CSHARP.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">C Sharp
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-4/12 p-4 project-card">
+                <img class="object-cover w-full h-full" src="img/project_3.png" alt="loading...">
+                <div class="hover-info">
+                    <p class="text-md lg:text-xl font-medium px-5 pb-5 lg:px-10 lg:pb-2">
+                        Sistema de gestión renta de vehículos
+                    </p>
+                    <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
+                        El sistema permite la administración de reservas, seguimiento de vehículos disponibles, gestión de contratos de alquiler, y el control de mantenimiento y servicios. 
+                    </p>
+                    <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
+                        <span class="inline-flex items-center bg-purple-800 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/CSHARP.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">C Sharp
+                        </span>
+                        <span class="inline-flex items-center bg-blue-500 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/SQLSERVER.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">SQL Server
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-4/12 p-4 project-card">
+                <img class="object-cover w-full h-full" src="img/project_4.png" alt="loading...">
+                <div class="hover-info">
+                    <p class="text-md lg:text-xl font-medium px-5 pb-5 lg:px-10 lg:pb-2">
+                        Solventor de problemas de programación lineal (Método gráfico)
+                    </p>
+                    <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
+                        La aplicación permite a los usuarios ingresar restricciones y funciones objetivo, y luego genera gráficos interactivos que muestran las soluciones óptimas.
+                    </p>
+                    <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
+                        <span class="inline-flex items-center bg-purple-800 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/CSHARP.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">C Sharp
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-4/12 p-4 project-card">
+                <img class="object-cover w-full h-full" src="img/project_5.png" alt="loading...">
+                <div class="hover-info">
+                    <p class="text-md lg:text-xl font-medium px-5 pb-5 lg:px-10 lg:pb-2">
+                        Aplicación web de comercio electrónico
+                    </p>
+                    <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
+                        Desarrollo de una tienda en línea especializada en la venta de productos electrónicos. 
+                        El sistema incluye funcionalidades como la gestión de inventarios, carrito de compras, procesamiento de pagos seguros, y seguimiento de pedidos.
+                    </p>
+                    <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
+                        <span class="inline-flex items-center bg-blue-600 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/php_icon.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 23px;">PHP
+                        </span>
+                        <span class="inline-flex items-center bg-yellow-400 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                            <img src="img/JS.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">JavaScript
+                        </span>
+                        <span class="inline-flex items-center bg-purple-700 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/bootstrap_icon.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 20px;">Bootstrap
+                        </span>
+                        <span class="inline-flex items-center bg-blue-800 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/POSTGRES.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 20px;">PostgreSQL
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-4/12 p-4 project-card">
+                <img class="object-cover w-full h-full" src="img/project_6.png" alt="loading...">
+                <div class="hover-info">
+                    <p class="text-md lg:text-xl font-medium px-5 pb-5 lg:px-10 lg:pb-2">
+                        Aplicación móvil de comercio electrónico
+                    </p>
+                    <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
+                        Desarrollo de una aplicación móvil de comercio electrónico especializada en la venta de productos electrónicos. 
+                        La app fue creada por medio de la aplicación web de comercio electrónico utilizando Cordova.
+                    </p>
+                    <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
+                        <span class="inline-flex items-center bg-blue-600 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/php_icon.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 23px;">PHP
+                        </span>
+                        <span class="inline-flex items-center bg-yellow-400 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                            <img src="img/JS.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">JavaScript
+                        </span>
+                        <span class="inline-flex items-center bg-purple-700 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/bootstrap_icon.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 20px;">Bootstrap
+                        </span>
+                        <span class="inline-flex items-center bg-blue-800 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/POSTGRES.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 20px;">PostgreSQL
+                        </span>
+                        <span class="inline-flex items-center bg-gray-600 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                            <img src="img/CORDOVA.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">Cordova
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Contenido Tecnología -->
+    <div id="tecnologias" class="container-center">
+        <div class="mx-4 lg:mx-24 p-4 text-white flex">
+            <div class="w-full text-center">
+                <p class="text-3xl lg:text-5xl font-bold py-12"> Tecnologías </p>
+            </div>
+        </div>
+        <div class="text-xl font-light mx-4 lg:mx-24 px-8 lg:px-40 pb-10 text-center text-white">
+            Mi enfoque proactivo y mi dedicación al aprendizaje continuo me han permitido enfrentar y superar desafíos complejos que han requerido el uso de diferentes tecnologías, 
+            ofreciendo así soluciones innovadoras y eficientes.
+        </div>
+        
+        <div class="mx-4 lg:mx-24 mt-10 px-2 lg:px-20 pb-20 flex flex-wrap justify-center">
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/HTML.png" alt="HTML" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/CSS.png" alt="CSS" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/JS.png" alt="JS" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/PHP.png" alt="PHP" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/CSHARP.png" alt="C#" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/JAVA.png" alt="Java" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/PYTHON.png" alt="Python" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/DJANGO.png" alt="Django" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/POSTGRES.png" alt="PostgreSQL" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/MYSQL.png" alt="MySQL" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/SQLSERVER.png" alt="SQL Server" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>
+            <div class="w-6/12 lg:w-2/12 flex justify-center p-4">
+                <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center" style="background-color: #2F3C54;">
+                    <img class="object-contain" src="img/FIGMA.png" alt="Figma" style="max-width: 84px; max-height: 84px;">
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        function toggleCustomClass(iconElement) {
+            // Verifica si el ícono ya tiene la clase personalizada
+            const hasCustomClass = iconElement.classList.contains('p-2', 'bg-gray-800', 'rounded-full');
+
+            // Elimina las clases personalizadas de todos los íconos
+            const allIcons = document.querySelectorAll('.cursor-pointer i');
+            allIcons.forEach(icon => {
+                icon.classList.remove('p-2', 'bg-gray-800', 'rounded-full');
+            
+            });
+
+            // Agrega o quita las clases personalizadas según sea necesario
+            if (!hasCustomClass) {
+                iconElement.classList.add('p-2', 'bg-gray-800', 'rounded-full');
+            }
+        }
+     
+        AOS.init({
+            duration: 800, // Duración de la animación
+            once: true, // Activación de la animación
+            live: true, // Detecta elementos en tiempo real mientras te desplazas
+        });
+        
+    </script>
+</body>
+</html>
