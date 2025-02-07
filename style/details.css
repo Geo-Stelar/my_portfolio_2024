@@ -1,0 +1,10 @@
+.project-card {
+    height: 475px; /* O el alto que prefieras */
+    overflow: hidden;
+}
+
+.project-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

@@ -10,16 +10,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/details.css">
 
 </head>
 <body style="background: #102B3E;">
 
     <!--sidebar-->
-    <div class="fixed h-screen w-full lg:w-24 lg:h-full pt-6 bg-transparent flex lg:items-center justify-center lg:justify-center lg:flex-col">
+    <div class="fixed top-0 h-auto w-full lg:w-24 lg:h-full pt-6 bg-transparent flex lg:items-center justify-center lg:justify-center lg:flex-col z-50">
         <div class="w-full flex flex-wrap justify-center lg:justify-center">
             <!--Autobiografia, proyectos, experiencia, herramientas, contacto-->
             <div class="bg-transparent">
-                <div class="py-2 px-2 lg:py-10 lg:px-2 text-gray-100 bg-gray-900 rounded-full text-center shadow-lg flex lg:flex-col w-full lg:w-auto">
+                <div class="py-2 px-2 lg:py-10 lg:px-2 text-gray-100 bg-gray-900 bg-opacity-95 backdrop-blur-sm rounded-full text-center shadow-lg flex lg:flex-col w-full lg:w-auto">
                     <span class="cursor-pointer hover:text-white block mx-5 lg:mx-2 my-4">
                         <a href="#sobremi"><i class="fas fa-user-alt custom-icon" onclick="toggleCustomClass(this)"></i></a>
                     </span>
@@ -143,7 +144,7 @@
                     </p>
                     <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
                         Desarrollo de una wiki dinámica y actualizada, donde los usuarios autorizados con permisos 
-                        de edición pueden gestionar y actualizar contenido de manera colaborativa. 
+                        de edición pueden gestionar y actualizar contenido. 
                     </p>
                     <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
                         <span class="inline-flex items-center bg-yellow-500 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
@@ -220,16 +221,15 @@
                     </p>
                     <p class="text-md font-light px-5 pb-5 lg:px-10 lg:pb-2">
                         Desarrollo de una tienda en línea especializada en la venta de productos electrónicos. 
-                        El sistema incluye funcionalidades como la gestión de inventarios, carrito de compras, 
-                        autentificación por correo para los usuarios, seguimiento de pedidos y un sistema para los
-                        administradores de la tienda en línea.
+                        incluyendo funcionalidades como carrito de compras, autentificación por correo para los usuarios, 
+                        seguimiento de pedidos y un sistema para los administradores de la tienda en línea.
                     </p>
                     <div class="px-5 pb-2 mb-2 lg:px-10 lg:pt-2 lg:pb-2 lg:mb-5">
                         <span class="inline-flex items-center bg-blue-600 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
                             <img src="img/php_icon.png" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 23px;">PHP
                         </span>
                         <span class="inline-flex items-center bg-red-900 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                            <img src="img/laravel.svg" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 23px;">Laravel
+                            <img src="img/laravel.svg" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">Laravel
                         </span>
                         <span class="inline-flex items-center bg-yellow-400 rounded-full px-2 lg:px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                             <img src="img/js.svg" alt="loading..." class="w-4 h-4 mr-1" style="height: 16px; width: 16px;">JavaScript
